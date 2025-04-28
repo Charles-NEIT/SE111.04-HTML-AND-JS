@@ -61,14 +61,78 @@
 
     <tr>
 
-        <td><label for="age"><h2>Date and Title</h2></label></td>
+        <td><h2>Date and Title</h2></td>
     </tr>
 
     <tr>
+
+    </tr>
         
+    <tr>
+        <td><label for="date">Date</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <input type="date" required  name="date">
+        </td>
     </tr>
 
 
+
+    <tr>
+        <td><label for="time">Time</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <input type="time" required  name="time">
+        </td>
+    </tr>
+
+
+
+
+    <tr>
+        <td><label for="guests">Number of Guests</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <input type="number" value ="5"  name="guests">
+        </td>
+    </tr>
+
+
+    <tr>
+
+        <td><h2>Food</h2></td>
+    </tr>
+
+
+    <tr>
+        <td><label for="size">Size</label></td>
+        <td style="display: flex; flex-direction: row;">
+            <label><input type="radio"  name="size" value = "sm">sm </label><label> <input type="radio"  name="size" value = "med"> med </label> <label> <input type="radio"  name="size" value = "lg">lg</label>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><label for="drinks">Drinks</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <label><input type="checkbox" required  name="drink1" checked ="true" value ="coke">Coke </label>
+            <label><input type="checkbox" required  name="drink2" value ="sprite">Sprite </label>
+            <label><input type="checkbox" required  name="drink3" value ="fruit punch">Fruit Punch </label>
+            <label><input type="checkbox" required  name="drink4" value ="lemonade">Lemonade </label>
+            <label><input type="checkbox" required  name="drink5" value ="iced tea">Iced Tea </label>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><label for="cake">Cake</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <select name = "cake"> <option>Chocolate</option> <option>Vanilla</option> <option>I'll bring my own</option></select>
+        </td>
+    </tr>
+
+
+    <tr>
+
+        <td><h2>Decorations</h2></td>
+    </tr>
 
 
 
