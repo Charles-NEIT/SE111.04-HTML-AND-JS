@@ -113,10 +113,10 @@
         <td><label for="drinks">Drinks</label></td>
         <td style="display: flex; flex-direction: column;">
             <label><input type="checkbox" required  name="drink1" checked ="true" value ="coke">Coke </label>
-            <label><input type="checkbox" required  name="drink2" value ="sprite">Sprite </label>
-            <label><input type="checkbox" required  name="drink3" value ="fruit punch">Fruit Punch </label>
-            <label><input type="checkbox" required  name="drink4" value ="lemonade">Lemonade </label>
-            <label><input type="checkbox" required  name="drink5" value ="iced tea">Iced Tea </label>
+            <label><input type="checkbox" name="drink2" value ="sprite">Sprite </label>
+            <label><input type="checkbox" name="drink3" value ="fruit punch">Fruit Punch </label>
+            <label><input type="checkbox" name="drink4" value ="lemonade">Lemonade </label>
+            <label><input type="checkbox" name="drink5" value ="iced tea">Iced Tea </label>
         </td>
     </tr>
 
@@ -135,13 +135,28 @@
     </tr>
 
 
+    <tr>
+        <td><label for="colors">Color Scheme</label></td>
+        <td style="display: flex; flex-direction: column;">
+            Choose a color scheme for the party<input type="color" name="colors">
+        </td>
+    </tr>
 
 
+    <tr>
+        <td><label for="comments">Additional Comments</label></td>
+        <td style="display: flex; flex-direction: column;">
+            <textarea placeholder="Please add any aditional comments here" name ="comments"></textarea>
+        </td>
+    </tr>
 
 
-
-
-
+    <tr>
+        <td><label></label></td>
+        <td style="display: flex; flex-direction: column;">
+            <input type="submit" value="Submit">
+        </td>
+    </tr>
 
 
 
