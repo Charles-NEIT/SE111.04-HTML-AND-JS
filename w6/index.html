@@ -10,15 +10,7 @@
 <body>
     <script>
         //Initalizing var's
-        let total_gross_pay = 0;
-
-        let total_net_pay = 0;
-
-        let total_taxes = 0;
-
-        let count_employees = 0;
-
-        let tax_rate = 0.2;
+        
 
         let answer = "y";
 
@@ -30,6 +22,8 @@
             let pay_per_hour = Number(prompt("Enter your hourly pay omit the dollar sign:$"))
 
             let hours_worked = Number(prompt("Enter your hours worked for the past 2 weeks"))
+
+            let tax_rate = 0.2;
 
             //CALCULATING
             let total_gross_pay = pay_per_hour * hours_worked;
