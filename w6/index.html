@@ -9,9 +9,39 @@
 <body>
     <script>
         let total_gross_pay = 0;
+
         let total_net_pay = 0;
+
         let total_taxes = 0;
+
         let count_employees = 0;
+
+        let tax_rate = 0.2;
+
+        let answer = "y";
+
+        while (answer.toLowerCase() = "y"){
+            let first_name = prompt("Enter the first Name of you or your employee")
+            let last_name = prompt("Enter the last Name of you or your employee")
+
+            let pay_per_hour = Number(prompt("Enter your hourly pay omit the dollar sign:$"))
+
+            let hours_worked = Number(prompt("Enter your hours worked for the past 2 weeks"))
+
+            let total_gross_pay = pay_per_hour * hours_worked;
+
+            let total_taxes = total_gross_pay * tax_rate
+
+            let total_net_pay = total_gross_pay - total_taxes
+
+
+
+
+        }
+
+
+
+
     </script>
 </body>
 </html>
