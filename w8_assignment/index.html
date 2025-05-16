@@ -36,13 +36,16 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		
+		var first_input = document.getElementById('first');
+        var last_input = document.getElementById('last');
+        var submit_button = document.getElementById('button');
+        var output_div = document.getElementById('output');
 
 		//Make an array to store the people
-		
+		var people =[];
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		
+		submit_button.addEventListener('click', calcAndDisplay);
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -61,21 +64,29 @@
 
 		function calcAndDisplay(e)
 		{
-			//Create an object called person.
+						//Create an object called person.
 			//Add the following properties:
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
-
-            var person = {
-
-
-
-            }//end of person object
+			var person ={     
+				first:first_input.value,
+                last:last_input.value
 
 
+			}
 
+            //end of person object
 
 			//Add the person object into the people array by using the .push() array method.
+		people.push(person);
+
+
+
+
+
+
+
+
 			
 
 			//Bubble sort people on the last name
@@ -93,18 +104,19 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			
+			console.log(people);
 
 			//create a variable called 'output' that has an empty string value stored to 
+			var output = "";
 			
-
 			//Loop through the objects in the people array
-			for()
-            {
+			for(let i=0; i< people.length; i++)
 
+            {
 				//Loop through each property in the object
 				for(key in people[i])
                 {
+					output += key.toUpperCase() + ": " + people[i][key] + "<br>";
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -113,14 +125,16 @@
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+				output += '<hr>';
 
 
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
-				
+				output_div.innerHTML = output;
+
+
 
 
 
