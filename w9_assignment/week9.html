@@ -9,7 +9,8 @@
 </head>
 
 <body>
-</body>
+
+
 
 <script type="text/javascript">
 	//Use this Array of objects to complete the assignment.
@@ -23,6 +24,36 @@
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
 	
+
+
+
+
+
+var groups = {};
+people.forEach(function(person){
+	if(!groups[person.credit]){
+		groups[person.credit] =[];
+	}
+	groups[person.credit].push(person);
+}
+
+
+
+)
+
+
+
+
+
+
 </script>
+
+
+
+
+
+
+
+
 
 </html>
