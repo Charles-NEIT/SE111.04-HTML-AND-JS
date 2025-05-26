@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Week 2 Files</title>
+<title>Week 9 Assignment</title>
 <style type="text/css">
 	.border{border:1px solid black;}
 </style>
@@ -28,18 +28,41 @@
 
 
 
+var body = document.querySelector("body")
 
-var groups = {};
-people.forEach(function(person){
-	if(!groups[person.credit]){
-		groups[person.credit] =[];
+for (var i = 0; i < people.length; i++) {
+    var person = people[i];
+
+	var tempDiv = document.createElement("div");
+
+	tempDiv.setAttribute("id", String(i));
+
+    
+    tempDiv.setAttribute("class", "border");
+
+	for (var key in person) {
+    if (person.hasOwnProperty(key)) {
+        
+        var tempP = document.createElement("p");
+
+        
+        var text = document.createTextNode(person[key]);
+
+        
+        tempP.appendChild(text);
+
+        
+        tempDiv.appendChild(tempP);
+    }
 	}
-	groups[person.credit].push(person);
+
+
+    body.appendChild(tempDiv);
 }
 
 
 
-)
+
 
 
 
